@@ -1,128 +1,122 @@
 .container {
-    position: relative;
-    left: 50%;
-    top: 120px;
-    transform: translateX(-50%);
-    width: 650px;
-    min-height: 300px;
-    text-align: center;
-    color: #fff;
-    background-color: rgba(0, 0, 0, 0.9);
-    border-radius: 10px;
-    border: 10px solid #fff;
+  position: relative;
+  left: 50%;
+  top: 120px;
+  transform: translateX(-50%);
+  width: 650px;
+  min-height: 300px;
+  text-align: center;
+  color: #fff;
+  background-color: rgba(17, 16, 16, 0.9);
+  border-radius: 10px;
+  border: 10px solid rgba(158, 158, 158, 0.2);
 }
 .todo-field-input h4 {
-    font-size: 1.5em;
-    margin-bottom: 30px;
+  font-size: 1.5em;
+  margin-bottom: 30px;
 }
 .input-field {
-    display: flex;
-    text-align: center;
-    height: fit-content;
-    width: fit-content;
-    margin: auto;
+  display: flex;
+  text-align: center;
+  height: fit-content;
+  width: fit-content;
+  margin: auto;
 }
 .input-bx {
-    height: 50px;
-    width: 350px;
-    border: 1px solid #ad1deb;
-    font-size: 1.5em;
-    outline: none;
-    padding-left: 10px;
+  height: 50px;
+  width: 350px;
+  border: 1px solid #2c67f2;
+  font-size: 1.3em;
+  outline: none;
+  padding-left: 10px;
 }
 .btn {
-    height: 52px;
-    width: 130px;
-    text-transform: uppercase;
-    font-size: 1.1em;
-    letter-spacing: .1em;
-    background-image: linear-gradient(315deg, #6e72fc 0%, #ad1deb 74%);
-    color: #fff;
-    border: none;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 0 25px 25px 0;
-    transition: 0.6s;
-    overflow: hidden;
-    position: relative;
+  height: 52px;
+  width: 130px;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  letter-spacing: 0.1em;
+  background-image: linear-gradient(315deg, #62cff4 0%, #2c67f2 74%);
+  color: #fff;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0 25px 25px 0;
+  transition: 0.6s;
+  overflow: hidden;
+  position: relative;
 }
 .btn::before {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.5);
-    width: 99px;
-    height: 100%;
-    left: 0;
-    top: 0;
-    opacity: 0.5s;
-    filter: blur(30px);
-    transform: translate(-70px) skewX(-15deg);
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 99px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0.5s;
+  filter: blur(30px);
+  transform: translate(-70px) skewX(-15deg);
 }
 .btn::after {
-    content: '';
-    display: block;
-    position: absolute;
-    background-color: rgba(255, 255, 255, 0.2);
-    width: 99px;
-    height: 100%;
-    left: 0;
-    top: 0;
-    opacity: 0;
-    filter: blur(30px);
-    transform: translate(-50px) skewX(-15deg);
+  content: "";
+  display: block;
+  position: absolute;
+  background-color: rgba(255, 255, 255, 0.2);
+  width: 99px;
+  height: 100%;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  filter: blur(30px);
+  transform: translate(-50px) skewX(-15deg);
 }
 .btn:active::before {
-    transform: translateX(500px) skewX(-15deg);
-    opacity: .6;
-    transition: 0.7s;
+  transform: translateX(500px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.7s;
 }
 .btn:active::after {
-    transform: translateX(500px) skewX(-15deg);
-    opacity: .6;
-    transition: 0.7s;
+  transform: translateX(500px) skewX(-15deg);
+  opacity: 0.6;
+  transition: 0.7s;
 }
 .saved-section {
-    margin: 80px 0 50px 0;
+  margin: 80px 0 50px 0;
 }
 .todo-field-container {
-    margin-top: 20px;
-    background-color: #ad1deb;
-    width: 450px;
-    height: 50px;
-    margin-left: auto;
-    margin-right: auto;
+  background-image: linear-gradient(315deg, #62cff4  0%, #2c67f2 74%);
+  width: 450px;
+  height: 50px;
+  margin: 20px auto 0 auto;
+  border-radius: 10px;
 }
 .todo-field {
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
 .text-content {
-    height: 48px;
-    width: 80%;
-    position: relative;
-}
-.text-content span {
-    position: absolute;
-    top: 10px;
+  position: relative;
+  width: 80%;
 }
 .action-content {
-    position: relative;
-    height: 48px;
-    width: 20%;
+  position: relative;
+  height: 48px;
+  width: 20%;
 }
 .manage-i {
-    position: absolute;
-    top: 13px;
-    left: 15px;
-    width: 60px;
-    display: flex;
-    justify-content: space-between;
+  position: absolute;
+  top: 13px;
+  left: 15px;
+  width: 60px;
+  display: flex;
+  justify-content: space-between;
 }
 .act-btn {
-    background: transparent;
-    outline: none;
-    border: none;
-    color: #fff;
+  background: transparent;
+  outline: none;
+  border: none;
+  color: #fff;
 }
